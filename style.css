@@ -1,0 +1,419 @@
+* {
+  box-sizing: border-box;
+}
+body,html {
+    max-width: 100%;
+    height: 100vh;
+    min-height: 100%;
+}
+body {
+  background-color: hsl(218, 28%, 13%);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  Font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+}
+
+body, h1, h2, h3, h4, p, a {
+  color: hsl(0, 0%, 100%);
+  line-height: 1.5;
+}
+h1 {
+  font-size: 2.5em;
+}
+
+h1, h2, h3, h4,nav {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* intro section */
+
+.intro{
+  background-color: hsl(217, 28%, 15%);
+}
+
+
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px;
+  margin-top: 0;
+  padding-top: 60px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding-left: 50px;
+}
+img {
+  max-width: 100%;
+}
+
+a
+{
+  text-decoration: none;
+}
+.first-text {
+  margin: auto;
+  width: 50%;
+  z-index: 3;
+  position: relative;
+
+}
+button {
+    background: linear-gradient(to right,hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    border-radius: 40px;
+    padding: 15px;
+    border: none;
+    color: white;
+    width: 250px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 150px;
+
+}
+/* Flexbox */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex > div,
+.flex > ul {
+  flex: 1;
+}
+.flex > div.features {
+  flex-basis: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.features-flex {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 120px;
+}
+
+/* Features section */
+
+.second-section::before {
+  background-image: url(images/bg-curvy-desktop.svg);
+  content: '';
+  height: 330px;
+  width:100%;
+  position: absolute;
+  top: -330px;
+  left: 0px;
+  background-size: 100% 100%;
+
+}
+
+.second-section {
+  position: relative;
+}
+
+/* Productivity section */
+
+.productivity-text {
+  text-align: left;
+  padding-left: 30px;
+}
+.productivity-img {
+padding-right: 30px;
+}
+
+.productivity {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.green {
+  color: hsl(176, 68%, 64%);
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+}
+
+/* Staff */
+
+.quotes {
+position: relative;
+top: 16px;
+right:43%;
+
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.user-info p {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.position {
+  font-size: 0.7em;
+}
+
+.staff-box {
+  background-color: hsl(219, 30%, 18%);
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 25px;
+  text-align: left;
+  padding-bottom: 10px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.staff-flex {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 180px;
+}
+
+/* Sign-up section */
+
+.sign-up {
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  background-color: hsl(217, 28%, 15%);
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 3px black;
+  position: relative;
+  z-index: 3;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+.sign-up button {
+  margin-bottom: 0;
+}
+
+.sign-up input {
+  padding: 15px;
+  border-radius: 40px;
+  width: 25rem;
+  margin-right: 20px;
+}
+
+/* Footer section */
+
+
+
+footer {
+  background-color: hsl(216, 53%, 9%);
+  padding-top: 200px;
+  position: relative;
+  bottom: 150px;
+  padding-bottom: 150px;
+  padding-right: 60px;
+  padding-left: 60px;
+  overflow: hidden;
+
+
+}
+.footer-flex {
+  flex-wrap: wrap;
+}
+
+footer div {
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+footer ul li {
+  text-align: left;
+}
+
+.contact{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  width: 115%;
+}
+
+.phone-text {
+  margin-right: 15px;
+}
+
+.lorem-ipsum {
+  text-align: left;
+  align-items: flex-start;
+  padding-right: 35px;
+}
+
+.location-image {
+  margin-right: 8px;
+  margin-top: 9%;
+}
+
+.fylo-logo {
+  margin-right: 90%;
+  margin-bottom: 25px;
+}
+
+.padding {
+  margin-right: 25px;
+}
+
+footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+}
+.logos {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(247deg) brightness(103%) contrast(103%);
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 1px;
+}
+
+@media screen and (max-width: 768px) {
+/* General */
+  body {
+    text-align: center;
+  }
+
+  /* Navbar */
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+nav ul li{
+  padding: 0;
+  display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+
+}
+.illustration-intro {
+ width: 70%;
+
+}
+
+/* Features section */
+
+.features {
+  margin-bottom: 80px;
+}
+
+.flex > div.features {
+  flex-basis: 100%;
+}
+
+/* Productivity section */
+.productivity .flex {
+display: flex;
+flex-direction: column;
+}
+
+.productivity-img {
+  width: 80%;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+/* staff section */
+
+.staff-flex {
+  flex-direction: column;
+}
+
+.staff-box {
+  margin-bottom: 40px;
+}
+
+/* Early acces section */
+
+
+.sign-up {
+  width: 90%;
+}
+
+.sign-up button {
+  width: 100%;
+}
+
+.sign-up input {
+  width: 100%;
+}
+
+/* Footer section */
+footer {
+  overflow-y:hidden;
+}
+.footer-flex {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.lorem-ipsum, .padding {
+  margin-bottom: 20px;
+}
+
+.location-image {
+  margin: auto;
+  margin-right: 20px;
+  max-width: 100%;
+}
+
+.social-media {
+  margin: auto;
+}
+
+
+}
